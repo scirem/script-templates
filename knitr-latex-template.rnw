@@ -37,6 +37,7 @@
 <<echo=TRUE, error=FALSE, warning=FALSE, message=FALSE>>=
 #### Load Essential Packages ####
 essential_pkgs <- c(
+  "clusterProfiler",
   "dplyr",
   "GenomeInfoDb",
   "GEOquery",
