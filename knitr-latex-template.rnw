@@ -1,10 +1,15 @@
 % !TeX program = xelatex
 % !TeX spellcheck = en_US
 % !TeX encoding = UTF-8
+% !Rnw weave = knitr
 
 % BibTex Key Pattern: 
 %   For Article: [auth][year][shorttitle]
 %   For Book: [auth][year][title]
+
+% C:\texlive\2020\bin\win32\tlmgr.bat update -all
+% C:\texlive\2020\bin\win32\tlmgr.bat install collection-basic collection-latex collection-xetex collection-latexrecommended collection-bibtexextra collection-fontsrecommended collection-langchinese
+% C:\texlive\2020\bin\win32\tlmgr.bat install enumitem float geometry listings paralist siunitx
 
 \documentclass{article}
 \usepackage{ctex}
