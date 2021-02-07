@@ -61,6 +61,7 @@ for(pkg in essential_pkgs) library(pkg, character.only = TRUE)
 @
 
 \url{http://mirwalk.umm.uni-heidelberg.de/}
+\url{http://www.webgestalt.org/}
 
 \section{References}
 
