@@ -38,17 +38,14 @@
 #### Load Essential Packages ####
 essential_pkgs <- c(
   "dplyr",
-  "cowplot",
-  "uwot",
-  "ggplot2",
-  "openxlsx",
-  "dbplyr",
   "GenomeInfoDb",
-  "readxl",
-  "HDCytoData",
-  "CATALYST",
+  "GEOquery",
+  "ggplot2",
   "limma",
-  "diffcyt"
+  "openxlsx",
+  "readxl",
+  "umap",
+  "VennDiagram"
 )
 
 pending_pkgs <- unique(essential_pkgs[!essential_pkgs %in% installed.packages()])
@@ -62,6 +59,8 @@ if (length(pending_pkgs)) {
 
 for(pkg in essential_pkgs) library(pkg, character.only = TRUE)
 @
+
+\url{http://mirwalk.umm.uni-heidelberg.de/}
 
 \section{References}
 
