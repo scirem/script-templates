@@ -1,0 +1,35 @@
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+
+% BibTex Key Pattern: 
+%   For Article: [auth][year][shorttitle]
+%   For Book: [auth][year][title]
+
+\documentclass{article}
+\usepackage{ctex}
+
+\usepackage[left=1cm, right=1cm]{geometry}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{subcaption}
+
+\usepackage{hyperref}
+\hypersetup{
+    pdfstartview={FitH}
+}
+
+\title{Knitr \LaTeX Template}
+\author{ZHANG Yang}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{References}
+
+\bibliographystyle{unsrt}
+\bibliography{References}
+
+\end{document}
