@@ -32,6 +32,37 @@
 
 \maketitle
 
+\section{Environment Setup}
+
+<<echo=TRUE, error=FALSE, warning=FALSE, message=FALSE>>=
+#### Load Essential Packages ####
+essential_pkgs <- c(
+  "dplyr",
+  "cowplot",
+  "uwot",
+  "ggplot2",
+  "openxlsx",
+  "dbplyr",
+  "GenomeInfoDb",
+  "readxl",
+  "HDCytoData",
+  "CATALYST",
+  "limma",
+  "diffcyt"
+)
+
+pending_pkgs <- unique(essential_pkgs[!essential_pkgs %in% installed.packages()])
+
+if (length(pending_pkgs)) {
+  if (!requireNamespace("BiocManager", quietly = TRUE)){
+    install.packages("BiocManager", repos = "https://cloud.r-project.org")
+  }
+  BiocManager::install(pending_pkgs)
+}
+
+for(pkg in essential_pkgs) library(pkg, character.only = TRUE)
+@
+
 \section{References}
 
 \bibliographystyle{unsrt}
